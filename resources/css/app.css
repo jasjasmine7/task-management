@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+
+}
+h2 {
+    text-align: left;
+    position: relative;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.heading-container{
+    display: flex;
+    padding: 20px;
+    gap: 25pt;
+    flex-direction: column;
+    justify-content: center;
+}
+.content header {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.container p{
+    color: white;
+    margin: 5px 2px;
+    font-size: 14px;
+}
+
+.signin-page{
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 5px;
+    margin-top: 80pt;
+    box-shadow: 0 0 10px #271e1e;
+    position: -webkit-sticky;
+    width: 500px;
+    height: 430px;
+}
+h3{
+    padding-left: 30px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-group{
+    width: 200px;
+    height: 70px;
+    border: 1 px solid white;
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 7px;
+}
+.input{
+    border-radius: 5px;
+    padding: 5px 9px;
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+.checkbox{
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 7px;
+}
+.forgot{
+    float: right;
+    color: white;
+    font-size: 13px;
+    padding-top: -20px;
+    padding-right: 10px;
+  }
+.forgot :hover{
+    color: #c74444;
+}
+.btn{
+    width: 200px;
+    height: 40px;
+    border: 1 px solid white;
+    border-radius: 4px;
+    margin-left:  30px;
+    padding-bottom: 7px;
+    background-color: #8d1212;
+    padding: 5px 9px;
+    color: rgb(227, 227, 235);
+    transition: 0.3s;
+}
+.btn :hover{
+        background-color: #c92828;
+        color: white;
+}
+
+
+/* ------------------------------------- 2ND PAGE  ----------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 255px;
+    height: 100%;
+    z-index: 15;
+    background: linear-gradient(45deg, #7f0012, #3a0707);
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+ /* .sidebar h3 {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px ;
+} */
+
+
+/* .sidebar ul li a {
+    width: 100%;
+    text-decoration: none;
+    height: 60px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+
+} */
+/* .sidebar ul li a:hover{
+    background: white;
+    color: #620707;
+    width: 220px;
+} */
+
+/* .top-bar{
+    position: fixed;
+    height: 60px;
+    width: calc(100% - 300px);
+    background: #fff;
+    display: grid;
+    grid-template-columns: 10fr 0.4fr 1f;
+    grid-gap: 5px;
+    align-items: center;
+    color: #444;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+} */
+
+
+/* .search input {
+    margin-top: 10px;
+    width: 30%;
+    height: 10px;
+    margin-left: 350px;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #D9D9D9;
+} */
+
+/* .tables {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
+    align-items: self-start;
+    padding: 0 20px 20px 20px;
+} */
+/* .list-task {
+    height: 300px;
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 0 auto;
+} */
+/* .to-do{
+    height: 200px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin:  0 auto;
+} */
+
