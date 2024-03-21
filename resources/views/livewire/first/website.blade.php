@@ -3,7 +3,7 @@
       <div class="grid items-center w-full max-w-6xl gap-10 md:grid-cols-2">
         <div class="max-md:text-center">
 
-          <h2 class="font-bold text-[50px] text-white">
+          <h2 class="font-bold text-[50px] text-white ">
             Manage personal information conveniently</h2>
           <p class="mt-6 text-[18px] text-white">Philippian Marketing Corporation is an e-commerce and Filipino-owned company
             by the Siega family. It was established last June 2021 in the midst of a pandemic

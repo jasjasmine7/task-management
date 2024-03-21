@@ -16,7 +16,8 @@
                 <div class="flex items-center justify-center">
                     <img class="w-24 h-24 rounded-full" alt="image" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" />
                 </div>
-                    <div class="mt-4 ml-2 font-bold text-center text-white"> Philippian Marketing Corporation
+                    <div class="mt-4 ml-2 text-[20px] font-bold text-center text-white">Jasmine B</div>
+                    <p class="mt-2 ml-2 text-[12px] text-center font-thin text-white">DEVELOPER</p>
                     </div>
             </div>
             <hr class="mt-3 border-white" />
@@ -472,7 +473,7 @@
                     <div class="grid py-6 border-b sm:grid-cols-2">
                         <div class="">
                             <h2 class="py-2 pl-10 text-[16px] font-semibold leading-4 text-black">Account Activity</h2>
-                            <p class="pl-10 text-sm text-slate-600">Get important notifications about you or activity you've missed from PMC</p>
+                            <p class="pl-10 text-sm text-slate-600">Get important notifications or activity you've missed from PMC</p>
                         </div>
                         <div class="flex items-center mt-4 mr-5 sm:justify-end">
                             <div class="flex flex-col gap-3">
@@ -487,7 +488,7 @@
                 </div>
             </div>
             <!-- LOGOUT --->
-            <div @click.outside="openLogout=false" x-transition x-show="openLogout" class="fixed inset-0 z-50 flex items-center justify-center px-2 overflow-hidden transition-opacity bg-gray-500 bg-opacity-75 ">
+            <div @click.outside="openLogout=false" x-transition x-show="openLogout" class="fixed inset-0 z-50 flex items-center justify-center px-2 overflow-hidden transition-opacity bg-gray-500 bg-opacity-75">
 
                 <div class="p-4 sm:p-10 bg-gray-50 rounded-md  w-[300px] md:w-[500px] text-center overflow-y-auto">
                     <span class="mb-4 inline-flex justify-center items-center w-[62px] h-[62px] rounded-full border-4 border-red-900 bg-red-900 text-white">
@@ -550,7 +551,7 @@
                     openMessage: false,
                     openProfile: false,
                     openLogout: false,
-                    openSettings: true,
+                    openSettings: false,
 
                     toggle() {
                         this.open = ! this.open

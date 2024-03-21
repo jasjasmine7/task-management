@@ -32,19 +32,51 @@
                             </svg>
                             Export
                         </button>
+
+                        {{-- <button type="button" class="flex items-center justify-center flex-shrink-0 px-3 py-2 text-sm font-medium text-white bg-red-900 rounded-md hover:bg-red-800 focus:ring-4 focus:outline-none hover:text-primary-700 focus:z-10">
+                            Filter by category
+                            <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+
+                        </button> --}}
+                        <button>
+                        <div class="text-sm" aria-labelledby="dropdownDefaultButton">
+                            <select id="category" class="flex items-center justify-center flex-shrink-0 px-1 py-2 text-sm font-medium text-white bg-red-900 rounded-md hover:bg-red-800 focus:ring-4 focus:outline-none hover:text-primary-700 focus:z-10">
+                                <option value="column">Column</option>
+                                    <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+
+                                <option value="all">All</option>
+                                <option value="member name">Member Name </option>
+                                <option value="email">Email</option>
+                                <option value="role">Role</option>
+                                <option value="status">Status</option>
+                                <option value="department">Department</option>
+                            </select>
+                        </div>
+                        </button>
                         <div class="relative">
                             <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-5">
                                 <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                             </div>
                         </div>
                             <input type="text" id="table-search" class="block p-2 text-sm text-gray-900 border border-gray-300 rounded-lg ps-10 w-60" placeholder="Search here">
-
                     </div>
                 </div>
         </div>
         <thead class="text-xs text-white uppercase bg-red-800">
             <tr>
                 <th scope="col" class="p-4">
+                </th>
+                <th scope="col" class="p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-all-search" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-all-search" class="sr-only">checkbox</label>
+                    </div>
                 </th>
                 <th scope="col" class="px-3 py-3">
                     ID
@@ -93,6 +125,12 @@
             <tr class="text-black bg-white border-b">
                 <td class="w-4 p-4">
                 </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     1
                 </th>
@@ -131,7 +169,7 @@
        <!--- EDIT CONTENT -->
                      <div x-show="open" class="fixed inset-0 z-50 flex items-center justify-center px-2 overflow-hidden">
                        <div x-show="open" x-transition:enter="transition-opacity ease-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity ease-in duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute inset-0 transition-opacity bg-gray-500 bg-opacity-75"></div>
-                       <div x-show="open" x-transition:enter="transition-transform ease-out duration-300" x-transition:enter-start="transform scale-75" x-transition:enter-end="transform scale-100" x-transition:leave="transition-transform ease-in duration-300" x-transition:leave-start="transform scale-100" x-transition:leave-end="transform scale-75" class="z-50 overflow-hidden bg-white rounded-md shadow-xl ">
+                       <div x-show="open" x-transition:enter="transition-transform ease-out duration-300" x-transition:enter-start="transform scale-75" x-transition:enter-end="transform scale-100" x-transition:leave="transition-transform ease-in duration-300" x-transition:leave-start="transform scale-100" x-transition:leave-end="transform scale-75" class="overflow-hidden bg-white rounded-md shadow-xl ">
                                <div class="relative h-auto px-3 pt-5 mb-1 bg-white rounded-lg dark:bg-red-700">
                                    <p class="text-[20px] pl-2 font-semibold  text-red-900 rounded-t-lg">
                                        Update User
@@ -216,7 +254,14 @@
                   </td>
             </tr>
             <tr class="text-black bg-gray-100 border-b">
+
                 <td class="w-4 p-4">
+                </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
                 </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     2
@@ -237,7 +282,7 @@
                       </select>
                 </td>
                 <td class="px-6 py-4">
-                    IT Department
+                    Sales Department
                 </td>
                 <td class="flex items-center px-2 py-4">
                         <!---- EDIT ---->
@@ -344,6 +389,12 @@
             </tr>
             <tr class="text-black bg-white border-b">
                 <td class="w-4 p-4">
+                </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
                 </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     3
@@ -471,6 +522,12 @@
             <tr class="text-black bg-gray-100 border-b">
                 <td class="w-4 p-4">
                 </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     4
                 </th>
@@ -490,7 +547,7 @@
                       </select>
                 </td>
                 <td class="px-6 py-4">
-                    IT Department
+                    Creatives
                 </td>
                 <td class="flex items-center px-2 py-4">
                     <!---- EDIT ---->
@@ -597,11 +654,17 @@
             <tr class="text-black bg-white border-b">
                 <td class="w-4 p-4">
                 </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     5
                 </th>
                 <td class="px-6 py-4">
-                    Jasmine Belinda
+                    Jonathan Lopez
                 </td>
                 <td class="px-6 py-4">
                     jkl@gmail.com
@@ -723,11 +786,17 @@
             <tr class="text-black bg-gray-100 border-b">
                 <td class="w-4 p-4">
                 </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     6
                 </th>
                 <td class="px-6 py-4">
-                    Sample Name
+                    Mark Lauriaga
                 </td>
                 <td class="px-6 py-4">
                     abc@gmail.com
@@ -742,7 +811,7 @@
                       </select>
                 </td>
                 <td class="px-6 py-4">
-                    IT Department
+                    Marketing Department
                 </td>
                 <td class="flex items-center px-2 py-4">
         <!---- EDIT ---->
@@ -848,6 +917,12 @@
             <tr class="text-black bg-white border-b">
                 <td class="w-4 p-4">
                 </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     7
                 </th>
@@ -868,7 +943,7 @@
 
                 </td>
                 <td class="px-6 py-4">
-                    IT Department
+                    Marketiing Department
                 </td>
                 <td class="flex items-center px-2 py-4 ">
  <!---- EDIT ---->
@@ -974,6 +1049,12 @@
             <tr class="text-black bg-gray-100 border-b">
                 <td class="w-4 p-4">
                 </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     8
                 </th>
@@ -993,7 +1074,7 @@
                       </select>
                 </td>
                 <td class="px-6 py-4">
-                    IT Department
+                    Creatives
                 </td>
                 <td class="flex items-center px-2 py-4">
           <!---- EDIT ---->
@@ -1099,11 +1180,17 @@
             <tr class="text-black bg-white border-b">
                 <td class="w-4 p-4">
                 </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
                 <th scope="row" class="px-3 py-4 font-medium text-black">
                     9
                 </th>
                 <td class="px-6 py-4">
-                    Sample Name
+                    Angelica Abad
                 </td>
                 <td class="px-6 py-4">
                     abc@gmail.com
@@ -1225,11 +1312,17 @@
             <tr class="text-black bg-gray-100 border-b">
                 <td class="w-4 p-4">
                 </td>
+                <td class="w-4 p-4">
+                    <div class="flex items-center">
+                        <input id="checkbox-table-search-1" type="checkbox" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <label for="checkbox-table-search-1" class="sr-only">checkbox</label>
+                    </div>
+                </td>
                 <th scope="row" class="px-2 py-4 font-medium text-black">
                     10
                 </th>
                 <td class="px-6 py-4">
-                    Jasmine Belinda
+                    Joana Reyes
                 </td>
                 <td class="px-6 py-4">
                     jkl@gmail.com

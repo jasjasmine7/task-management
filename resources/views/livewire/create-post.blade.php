@@ -368,7 +368,7 @@
                             <td class="px-8 py-3">
                                 <div class="flex justify-center -space-x-4 rtl:space-x-reverse">
                                     <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
-                                    <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
+                                    <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" alt="">
                                     <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-600 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+2</a>
                                 </div>
                             </td>
@@ -385,8 +385,8 @@
                               <td class="px-6 py-4 whitespace-nowrap">FrontEnd</td>
                               <td class="py-3 px-7 whitespace-nowrap">
                                   <div class="flex justify-center -space-x-4 rtl:space-x-reverse">
-                                      <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
-                                      <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
+                                      <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-4.png" alt="">
+                                      <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-5.png" alt="">
                                       <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-600 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+2</a>
                                   </div>
                               </td>
@@ -403,8 +403,8 @@
                                 <td class="px-6 py-4 whitespace-nowrap">BackEnd</td>
                                 <td class="py-3 px-7 whitespace-nowrap">
                                     <div class="flex justify-center -space-x-4 rtl:space-x-reverse">
-                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
-                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
+                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-6.png" alt="">
+                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-1.png" alt="">
                                         <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-600 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+2</a>
                                     </div>
                                 </td>
@@ -421,8 +421,8 @@
                                 <td class="px-6 py-4 whitespace-nowrap">Network</td>
                                 <td class="py-3 px-7 whitespace-nowrap">
                                     <div class="flex justify-center -space-x-4 justify -center rtl:space-x-reverse">
-                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
-                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
+                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-6.png" alt="">
+                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-4.png" alt="">
                                         <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-600 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+2</a>
                                     </div>
                                 </td>
@@ -456,8 +456,8 @@
                                 <td class="px-6 py-4 whitespace-nowrap">Network</td>
                                 <td class="py-3 px-7 whitespace-nowrap">
                                     <div class="flex justify-center -space-x-4 rtl:space-x-reverse">
-                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
-                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-2.png" alt="">
+                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-5.png" alt="">
+                                        <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" alt="">
                                         <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-600 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800" href="#">+2</a>
                                     </div>
                                 </td>

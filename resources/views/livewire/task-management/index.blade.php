@@ -33,6 +33,23 @@
                                 </svg>
                                 Export
                             </button>
+                            <button>
+                                <div class="text-sm" aria-labelledby="dropdownDefaultButton">
+                                    <select id="category" class="flex items-center justify-center flex-shrink-0 px-1 py-2 text-sm font-medium text-white bg-red-900 rounded-md hover:bg-red-800 focus:ring-4 focus:outline-none hover:text-primary-700 focus:z-10">
+                                        <option value="column">Column</option>
+                                            <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                            </svg>
+                                        <option value="all">All</option>
+                                        <option value="task name">Task Name </option>
+                                        <option value="assignedto">Assigned To</option>
+                                        <option value="assignedby">Assigned By</option>
+                                        <option value="status">Status</option>
+                                        <option value="priority">Priority</option>
+                                    </select>
+                                </div>
+                                </button>
                             <div class="relative">
                                 <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-5">
                                     <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
@@ -122,7 +139,7 @@
                 Web FrontEnd
             </td>
             <td class="px-3 py-4">
-                11 April 2024
+                26 March 2024
             </td>
             <td class="px-6 py-4">
                 <select name="filter" id="filter" class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300" >
@@ -214,7 +231,7 @@
                                                 </div>
                                                 <div>
                                                     <label for="category" class="block mt-3 mb-2 ml-3 text-sm font-bold text-red-900 dark:text-white">Priority</label>
-                                                    <select id="category" class="bg-red-50 border border-red-800 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 ">
+                                                    <select id="category" class="bg-red-50 border border-red-800 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 ">
                                                         <option selected="">Select priority</option>
                                                         <option value="High Priority">High Priority</option>
                                                         <option value="Medium Priority">Medium Priority</option>
@@ -301,7 +318,7 @@
                 Web FrontEnd
             </td>
             <td class="px-3 py-4">
-                11 April 2024
+                1 April 2024
             </td>
             <td class="px-6 py-4">
                     <select name="filter" id="filter" class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300" >
@@ -840,7 +857,7 @@
                 Web FrontEnd
             </td>
             <td class="px-3 py-4">
-                11 April 2024
+                25 March 2024
             </td>
             <td class="px-6 py-4">
                 <select name="filter" id="filter" class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300" >
@@ -1023,7 +1040,7 @@
                 Web FrontEnd
             </td>
             <td class="px-3 py-4">
-                11 April 2024
+                29 March 2024
             </td>
             <td class="px-6 py-4">
                 <select name="filter" id="filter" class="bg-yellow-200 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300" >
@@ -1203,7 +1220,7 @@
                 Web FrontEnd
             </td>
             <td class="px-3 py-4">
-                11 April 2024
+                15 April 2024
             </td>
             <td class="px-6 py-4">
                 <select name="filter" id="filter" class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300" >
