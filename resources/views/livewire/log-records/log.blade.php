@@ -19,16 +19,52 @@
                         </div>
                     </div>
                     <div class="flex items-center gap-2">
-                        <div class="relative">
-                        <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-5">
-                            <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+
+                        <button type="button" class="flex items-center justify-center flex-shrink-0 px-3 py-2 text-sm font-medium text-white bg-red-900 rounded-md hover:bg-red-800 focus:ring-4 focus:outline-none hover:text-primary-700 focus:z-10">
+                            <svg class="w-5 h-5 mr-2 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M16.444 18H19a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h2.556M17 11V5a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6h10ZM7 15h10v4a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-4Z"/>
+                              </svg>
+                            Print
+                        </button>
+                        <button type="button" class="flex items-center justify-center flex-shrink-0 px-3 py-2 text-sm font-medium text-white bg-red-900 rounded-md hover:bg-red-800 focus:ring-4 focus:outline-none hover:text-primary-700 focus:z-10">
+                            <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+                            </svg>
+                            Export
+                        </button>
+
+                        {{-- <button type="button" class="flex items-center justify-center flex-shrink-0 px-3 py-2 text-sm font-medium text-white bg-red-900 rounded-md hover:bg-red-800 focus:ring-4 focus:outline-none hover:text-primary-700 focus:z-10">
+                            Filter by category
+                            <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+
+                        </button> --}}
+                        <button>
+                        <div class="text-sm" aria-labelledby="dropdownDefaultButton">
+                            <select id="category" class="flex items-center justify-center flex-shrink-0 px-1 py-2 text-sm font-medium text-white bg-red-900 rounded-md hover:bg-red-800 focus:ring-4 focus:outline-none hover:text-primary-700 focus:z-10">
+                                <option value="column">Column</option>
+                                    <svg class="w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+
+                                <option value="all">All</option>
+                                <option value="username">Username </option>
+                                <option value="email">Email</option>
+                                <option value="ipaddress">IP Address</option>
+                                <option value="useragent">User Agent</option>
+                                <option value="datecreated">Created Date</option>
+                            </select>
                         </div>
-                    </div>
-                    <input type="text" id="table-search" class="block p-2 text-sm text-gray-900 border border-gray-300 rounded-lg ps-10 w-60" placeholder="Search here">
-                    <select name="filter" id="filter" class="bg-gray-50 border border-gray-300 text-gray-500 text-sm  focus:ring-blue-500 focus:border-blue-500 block px-3 py-1.5" >
-                        <option value="Ascending">Ascending</option>
-                        <option value="Descending">Descending</option>
-                      </select>
+                        </button>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 flex items-center pointer-events-none start-0 ps-5">
+                                <svg class="w-5 h-5 text-gray-500" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                            </div>
+                        </div>
+                            <input type="text" id="table-search" class="block p-2 text-sm text-gray-900 border border-gray-300 rounded-lg ps-10 w-60" placeholder="Search here">
                     </div>
                 </div>
         </div>
@@ -165,7 +201,7 @@
                     3
                 </th>
                 <td class="px-6 py-4">
-                    abc123
+                    def_123
                 </td>
                 <td class="px-6 py-4">
                     abc@gmail.com
@@ -211,7 +247,7 @@
                     abc123
                 </td>
                 <td class="px-6 py-4">
-                    abc@gmail.com
+                    def@gmail.com
                 </td>
                 <td class="px-6 py-4">
                     192.0.2.1
@@ -252,7 +288,7 @@
                     5
                 </th>
                 <td class="px-6 py-4">
-                    abc123
+                    def_123
                 </td>
                 <td class="px-6 py-4">
                     abc@gmail.com
@@ -299,7 +335,7 @@
                     abc123
                 </td>
                 <td class="px-6 py-4">
-                    abc@gmail.com
+                    def@gmail.com
                 </td>
                 <td class="px-6 py-4">
                     192.0.2.1
@@ -383,10 +419,10 @@
                     8
                 </th>
                 <td class="px-6 py-4">
-                    abc123
+                    def_123
                 </td>
                 <td class="px-6 py-4">
-                    abc@gmail.com
+                    def@gmail.com
                 </td>
                 <td class="px-6 py-4">
                     192.0.2.1
@@ -471,7 +507,7 @@
                     10
                 </th>
                 <td class="px-6 py-4">
-                    abc_123
+                    def_123
                 </td>
                 <td class="px-6 py-4">
                     abc@gmail.com
