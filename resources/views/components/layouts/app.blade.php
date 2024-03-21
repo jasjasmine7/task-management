@@ -386,99 +386,106 @@
             </div>
 
             <!--- SETTINGS --->
-            <div @click.outside="openSettings=false" x-transition x-show="openSettings" class="hidden p-10 pb-16 space-y-6 bg-white md:block">
+            <div @click.outside="openSettings=false" x-transition x-show="openSettings" class="hidden p-10 space-y-6 bg-white pb-14 md:block">
                 <div>
-                  <h2 class="text-2xl font-bold tracking-tight text-red-900">Settings</h2>
+                  <h2 class="mb-2 text-2xl font-bold tracking-tight text-red-900 ">Settings</h2>
                   <p class="mt-2 text-black">
                     Manage your account settings and set e-mail preferences.
                   </p>
                 </div>
 
                 <div class="w-full h-auto shrink-0 bg-border"></div>
-                <div
-                  class="flex flex-col space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0"
-                >
-        <nav class="flex space-x-2 lg:flex-col lg:space-x-0 lg:space-y-1">
-         <a
-            class="inline-flex items-center justify-start px-4 py-2 text-sm font-bold text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 bg-muted hover:bg-muted"
-            href="/examples/forms/account">Account</a
-          ><a
-            class="inline-flex items-center justify-start px-4 py-2 text-sm font-bold text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 hover:bg-transparent hover:underline"
-            href="/examples/forms/appearance">Appearance</a
-          ><a
-            class="inline-flex items-center justify-start px-4 py-2 text-sm font-bold text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 hover:bg-transparent hover:underline"
-            href="/examples/forms/notifications">Notifications</a
-          ><a
-            class="inline-flex items-center justify-start px-4 py-2 text-sm font-bold text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 hover:bg-transparent hover:underline"
-            href="/examples/forms/display">Display</a
-          >
-        </nav>
+                <div class="flex flex-col space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0">
+                    <nav class="flex space-x-2 lg:flex-col lg:space-x-0 lg:space-y-1">
+                        <a class="inline-flex items-center justify-start px-4 py-2 text-sm font-bold text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 bg-muted hover:bg-muted"
+                        href="/examples/forms/account">Account</a>
 
-        <div class="w-4/5 col-span-8 px-8 overflow-hidden shadow rounded-xl bg-gray-50">
-            <div class="pt-4 pb-3 border-b">
-              <h1 class="py-2 pl-1 text-lg font-semibold text-left text-black">Language and Time</h1>
-              <p class="pl-1 text-sm text-slate-600">Update language and time.</p>
-            </div>
-            <div class="grid mb-3 sm:grid-cols-2">
-                <div class="grid grid-cols-2 gap-3 pb-3 mb-2">
-                    <div>
-                        <label for="language" class="block pl-2 mt-3 mb-2 text-sm font-medium text-black dark:text-white">Language</label>
-                        <select id="language" class="border-gray-400 border bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="">English (US)</option>
-                            <option value="italian">Italiano</option>
-                            <option value="french">French</option>
-                            <option value="japanese">Japanese</option>
-                            <option value="chinese">Chinese</option>
-                            <option value="portuguese">Portuguese </option>
-                            <option value="filipino">Filipino</option>
+                        <a class="inline-flex items-center justify-start px-4 py-2 text-sm font-bold text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 hover:bg-transparent hover:underline"
+                        href="/examples/forms/appearance">Appearance</a>
 
-                        </select>
+                        <a class="inline-flex items-center justify-start px-4 py-2 text-sm font-bold text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 hover:bg-transparent hover:underline"
+                        href="/examples/forms/notifications">Notifications</a>
+
+                        <a class="inline-flex items-center justify-start px-4 py-2 text-sm font-bold text-black transition-colors rounded-md focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:text-accent-foreground h-9 hover:bg-transparent hover:underline"
+                        href="/examples/forms/display">Display</a>
+                    </nav>
+
+                    <div class="w-4/5 col-span-8 px-8 overflow-hidden shadow rounded-xl bg-gray-50">
+                        <div class="pt-4 pb-3 border-b">
+                        <h1 class="py-2 pl-1 text-lg font-semibold text-left text-black">Language and Time</h1>
+                        <p class="pl-1 text-sm text-slate-600">Update language and time.</p>
+                        </div>
+                        <div class="grid mb-3 sm:grid-cols-2">
+                            <div class="grid grid-cols-2 gap-3 pb-3 mt-3 mb-2">
+                                <div>
+                                    <label for="language" class="block pl-2 mt-3 mb-2 text-sm font-medium text-black dark:text-white">Language</label>
+                                    <select id="language" class="border-gray-400 border bg-gray-50 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                                        <option selected="">English (US)</option>
+                                        <option value="italian">Italiano</option>
+                                        <option value="french">French</option>
+                                        <option value="japanese">Japanese</option>
+                                        <option value="chinese">Chinese</option>
+                                        <option value="portuguese">Portuguese </option>
+                                        <option value="filipino">Filipino</option>
+
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="time" class="block mt-3 mb-2 ml-3 text-sm font-medium text-black dark:text-white">Time</label>
+                                    <select id="time" class="bg-gray-50 border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
+                                        <option selected="">UTC−05:00 (ET) – Eastern Time zone</option>
+                                        <option value="UK">UTC+05:00 – Kerguelen Islands, Saint Paul and Amsterdam Islands</option>
+                                        <option value="PH">UTC+08:00 (PHT)</option>
+                                        <option value="SK">UTC+09:00 (Korea Standard Time)</option>
+                                        <option value="UK">UTC−02:00 – South Georgia and the South Sandwich Islands</option>
+                                        <option value="UK">UTC−08:00 (Zone 4 or Northwest Zone) – State of Baja California</option>
+                                        <option value="UK">UTC+08:00 (HKT)</option>
+                                        <option value="UK">UTC+08:00 (SST)</option>
+                                        <option value="UK">UTC−06:00 – Easter Island</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div>
-                        <label for="time" class="block mt-3 mb-2 ml-3 text-sm font-medium text-black dark:text-white">Time</label>
-                        <select id="time" class="bg-gray-50 border border-gray-400 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
-                            <option selected="">UTC−05:00 (ET) – Eastern Time zone</option>
-                            <option value="UK">UTC+05:00 – Kerguelen Islands, Saint Paul and Amsterdam Islands</option>
-                            <option value="PH">UTC+08:00 (PHT)</option>
-                            <option value="SK">UTC+09:00 (Korea Standard Time)</option>
-                            <option value="UK">UTC−02:00 – South Georgia and the South Sandwich Islands</option>
-                            <option value="UK">UTC−08:00 (Zone 4 or Northwest Zone) – State of Baja California</option>
-                            <option value="UK">UTC+08:00 (HKT)</option>
-                            <option value="UK">UTC+08:00 (SST)</option>
-                            <option value="UK">UTC−06:00 – Easter Island</option>
-                        </select>
+                </div>
+                <div class="w-4/5 col-span-8 ml-40 overflow-hidden shadow rounded-xl bg-gray-50">
+                    <div class="pt-4 pb-3 border-b">
+                        <h1 class="py-2 pl-10 text-lg font-semibold text-left text-black">Alerts and Notifications</h1>
+                        <p class="pl-10 text-sm text-slate-600">Get notifications.</p>
                     </div>
-            </div>
-            </div>
-
-          </div>
+                    <div class="grid py-6 border-b sm:grid-cols-2">
+                        <div class="">
+                            <h2 class="py-2 pl-10 text-[16px] font-semibold leading-4 text-black">Company News</h2>
+                            <p class="pl-10 text-sm text-slate-600">Get announcements, and updates from PMC</p>
+                        </div>
+                        <div class="flex items-center mt-4 mr-5 sm:justify-end">
+                            <div class="flex flex-col gap-3">
+                                <label for="push" class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" value="" id="push" class="sr-only peer" checked />
+                                    <div class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-red-800 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 "></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Push</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid py-6 border-b sm:grid-cols-2">
+                        <div class="">
+                            <h2 class="py-2 pl-10 text-[16px] font-semibold leading-4 text-black">Account Activity</h2>
+                            <p class="pl-10 text-sm text-slate-600">Get important notifications about you or activity you've missed from PMC</p>
+                        </div>
+                        <div class="flex items-center mt-4 mr-5 sm:justify-end">
+                            <div class="flex flex-col gap-3">
+                                <label for="push" class="relative inline-flex items-center cursor-pointer">
+                                    <input type="checkbox" value="" id="push" class="sr-only peer" checked />
+                                    <div class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-red-800 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 "></div>
+                                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Push</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-          <div class="w-4/5 col-span-8 ml-40 overflow-hidden shadow rounded-xl bg-gray-50">
-            <div class="pt-4 pb-3 border-b">
-              <h1 class="py-2 pl-10 text-lg font-semibold text-left text-black">Alerts and Notifications</h1>
-              <p class="pl-10 text-sm text-slate-600">Get notifications.</p>
             </div>
-            <div class="grid py-6 border-b sm:grid-cols-2">
-                <div class="">
-                  <h2 class="py-2 pl-10 text-[16px] font-semibold leading-4 text-black">Company News</h2>
-                  <p class="pl-10 text-sm text-slate-600">Get announcements, and updates from PMC</p>
-                </div>
-                <div class="flex items-center mt-4 mr-5 sm:justify-end">
-                  <div class="flex flex-col gap-3">
-                    <label for="push" class="relative inline-flex items-center cursor-pointer">
-                      <input type="checkbox" value="" id="push" class="sr-only peer" checked />
-                      <div class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-red-800 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 "></div>
-                      <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Push</span>
-                    </label>
-                  </div>
-                </div>
-
-              </div>
-
-          </div>
-
-
-
             <!-- LOGOUT --->
             <div @click.outside="openLogout=false" x-transition x-show="openLogout" class="fixed inset-0 z-50 flex items-center justify-center px-2 overflow-hidden transition-opacity bg-gray-500 bg-opacity-75 ">
 
